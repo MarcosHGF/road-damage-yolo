@@ -1,0 +1,46 @@
+# Project configuration. Command-line flags override these values.
+# Anything you delete here falls back to the defaults in rdd/config.py.
+
+# Countries to download. Sizes of the official archives (approx.):
+#   Japan 1.0 GB, India 0.5 GB, Czech 0.25 GB, Norway 9.9 GB (3650x2044 images),
+#   United_States, China_MotorBike, China_Drone (see rdd/constants.py).
+# The default three have similar, small images (600-720 px) and consistent labels.
+countries: [Japan, Czech, India]
+
+convert:
+  # Damage-free images kept as background examples, as a fraction of the
+  # number of images that contain damage (per country). Helps against false
+  # positives on clean asphalt.
+  keep_empty_ratio: 0.15
+  # Treat images under a "train" folder that have no XML file as damage-free.
+  include_unannotated_train: true
+
+split:
+  train: 0.70
+  val: 0.15
+  test: 0.15
+  seed: 42
+  # 1 = split image by image. RDD2022 images come from vehicles driving along
+  # roads, so neighbouring images can be near-duplicates. Setting this to e.g. 20
+  # keeps runs of 20 consecutive image numbers in the same split, which gives a
+  # more honest test score (at the cost of slightly less even splits).
+  group_size: 1
+
+train:
+  # yolo11n < yolo11s < yolo11m < yolo11l: more accurate but slower and hungrier for VRAM.
+  # Rough guide: 4 GB VRAM -> n, 6-8 GB -> s, 10-12 GB -> m, 16 GB+ -> l.
+  model: yolo11s.pt
+  epochs: 100
+  imgsz: 640
+  batch: -1        # -1 = Ultralytics picks the largest batch that fits the GPU
+  patience: 25     # stop after this many epochs without validation improvement
+  workers: 4       # lower to 0-2 if Windows reports "paging file too small"
+  seed: 0
+  name: rdd_yolo
+  extra:           # passed straight to Ultralytics model.train()
+    degrees: 5.0   # crack orientation defines the class: keep rotation small
+    shear: 2.0
+    fliplr: 0.5
+    flipud: 0.0    # never flip vertically (road perspective)
+    mosaic: 1.0
+    cos_lr: true

@@ -1,0 +1,8 @@
+# Installing ultralytics also installs PyTorch. On Windows pip installs a CPU-only
+# build by default: for GPU training follow the "NVIDIA GPU" step in the README
+# (or run `python -m rdd doctor`).
+ultralytics>=8.3.0
+PyYAML>=6.0
+matplotlib>=3.7
+Pillow>=10.0
+numpy>=1.24

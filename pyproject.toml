@@ -1,0 +1,6 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+markers = [
+    "slow: trains a tiny YOLO model on CPU (about a minute); needs ultralytics installed",
+]

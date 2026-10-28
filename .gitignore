@@ -1,0 +1,30 @@
+# Generated data (large). data/sample/ IS committed on purpose.
+data/downloads/
+data/raw/
+data/converted/
+data/yolo_dataset/
+
+# Training / evaluation outputs
+runs/
+.smoke/
+reports/*
+!reports/.gitkeep
+*.cache
+
+# Model weights: ignored everywhere except weights/ (e.g. a final best.pt < 100 MB)
+*.pt
+!weights/*.pt
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
