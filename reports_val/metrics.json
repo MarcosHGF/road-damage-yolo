@@ -1,0 +1,251 @@
+{
+  "weights": "C:\\Users\\marco\\Desktop\\road-damage-yolo\\runs\\detect\\rdd_yolo\\weights\\best.pt",
+  "split": "val",
+  "overall": {
+    "map50": 0.6191,
+    "map50_95": 0.334,
+    "precision": 0.6507,
+    "recall": 0.5721,
+    "per_class": {
+      "longitudinal_crack": {
+        "ap50": 0.525,
+        "ap50_95": 0.2798,
+        "precision": 0.6315,
+        "recall": 0.4784
+      },
+      "transverse_crack": {
+        "ap50": 0.5293,
+        "ap50_95": 0.2471,
+        "precision": 0.6029,
+        "recall": 0.4926
+      },
+      "alligator_crack": {
+        "ap50": 0.6569,
+        "ap50_95": 0.3454,
+        "precision": 0.6858,
+        "recall": 0.5834
+      },
+      "pothole": {
+        "ap50": 0.765,
+        "ap50_95": 0.4635,
+        "precision": 0.6825,
+        "recall": 0.7338
+      }
+    }
+  },
+  "per_country": {
+    "China_Drone": {
+      "map50": 0.6384,
+      "map50_95": 0.3815,
+      "precision": 0.6245,
+      "recall": 0.6009,
+      "per_class": {
+        "longitudinal_crack": {
+          "ap50": 0.6857,
+          "ap50_95": 0.3589,
+          "precision": 0.6869,
+          "recall": 0.6274
+        },
+        "transverse_crack": {
+          "ap50": 0.7909,
+          "ap50_95": 0.4243,
+          "precision": 0.6946,
+          "recall": 0.7665
+        },
+        "alligator_crack": {
+          "ap50": 0.2617,
+          "ap50_95": 0.1081,
+          "precision": 0.4096,
+          "recall": 0.2619
+        },
+        "pothole": {
+          "ap50": 0.8153,
+          "ap50_95": 0.6346,
+          "precision": 0.7067,
+          "recall": 0.7479
+        }
+      },
+      "images": 349
+    },
+    "China_MotorBike": {
+      "map50": 0.8724,
+      "map50_95": 0.5881,
+      "precision": 0.8463,
+      "recall": 0.8156,
+      "per_class": {
+        "longitudinal_crack": {
+          "ap50": 0.8244,
+          "ap50_95": 0.5036,
+          "precision": 0.8097,
+          "recall": 0.7552
+        },
+        "transverse_crack": {
+          "ap50": 0.806,
+          "ap50_95": 0.4379,
+          "precision": 0.7508,
+          "recall": 0.7301
+        },
+        "alligator_crack": {
+          "ap50": 0.896,
+          "ap50_95": 0.5733,
+          "precision": 0.8424,
+          "recall": 0.8395
+        },
+        "pothole": {
+          "ap50": 0.963,
+          "ap50_95": 0.8378,
+          "precision": 0.9823,
+          "recall": 0.9375
+        }
+      },
+      "images": 296
+    },
+    "Czech": {
+      "map50": 0.3715,
+      "map50_95": 0.1358,
+      "precision": 0.4174,
+      "recall": 0.4356,
+      "per_class": {
+        "longitudinal_crack": {
+          "ap50": 0.449,
+          "ap50_95": 0.199,
+          "precision": 0.4776,
+          "recall": 0.4694
+        },
+        "transverse_crack": {
+          "ap50": 0.3361,
+          "ap50_95": 0.1039,
+          "precision": 0.376,
+          "recall": 0.4375
+        },
+        "alligator_crack": {
+          "ap50": 0.3294,
+          "ap50_95": 0.1045,
+          "precision": 0.3987,
+          "recall": 0.4
+        }
+      },
+      "images": 431
+    },
+    "India": {
+      "map50": 0.3895,
+      "map50_95": 0.1937,
+      "precision": 0.5195,
+      "recall": 0.3856,
+      "per_class": {
+        "longitudinal_crack": {
+          "ap50": 0.3502,
+          "ap50_95": 0.1615,
+          "precision": 0.5218,
+          "recall": 0.2691
+        },
+        "transverse_crack": {
+          "ap50": 0.1874,
+          "ap50_95": 0.0962,
+          "precision": 0.4912,
+          "recall": 0.1818
+        },
+        "alligator_crack": {
+          "ap50": 0.5851,
+          "ap50_95": 0.2892,
+          "precision": 0.6017,
+          "recall": 0.5765
+        },
+        "pothole": {
+          "ap50": 0.4352,
+          "ap50_95": 0.2279,
+          "precision": 0.4633,
+          "recall": 0.5149
+        }
+      },
+      "images": 1172
+    },
+    "Japan": {
+      "map50": 0.6144,
+      "map50_95": 0.3126,
+      "precision": 0.6245,
+      "recall": 0.5871,
+      "per_class": {
+        "longitudinal_crack": {
+          "ap50": 0.5095,
+          "ap50_95": 0.2407,
+          "precision": 0.6119,
+          "recall": 0.4689
+        },
+        "transverse_crack": {
+          "ap50": 0.4462,
+          "ap50_95": 0.1841,
+          "precision": 0.5256,
+          "recall": 0.4583
+        },
+        "alligator_crack": {
+          "ap50": 0.7075,
+          "ap50_95": 0.3675,
+          "precision": 0.6869,
+          "recall": 0.6397
+        },
+        "pothole": {
+          "ap50": 0.7946,
+          "ap50_95": 0.4581,
+          "precision": 0.6734,
+          "recall": 0.7814
+        }
+      },
+      "images": 1550
+    },
+    "Norway": {
+      "map50": 0.2046,
+      "map50_95": 0.0927,
+      "precision": 0.3908,
+      "recall": 0.2097,
+      "per_class": {
+        "longitudinal_crack": {
+          "ap50": 0.2663,
+          "ap50_95": 0.1149,
+          "precision": 0.4267,
+          "recall": 0.2806
+        },
+        "transverse_crack": {
+          "ap50": 0.1569,
+          "ap50_95": 0.0599,
+          "precision": 0.3852,
+          "recall": 0.1544
+        },
+        "alligator_crack": {
+          "ap50": 0.1905,
+          "ap50_95": 0.1032,
+          "precision": 0.3606,
+          "recall": 0.194
+        }
+      },
+      "images": 1256
+    },
+    "United_States": {
+      "map50": 0.6956,
+      "map50_95": 0.3875,
+      "precision": 0.7004,
+      "recall": 0.6073,
+      "per_class": {
+        "longitudinal_crack": {
+          "ap50": 0.739,
+          "ap50_95": 0.4368,
+          "precision": 0.6754,
+          "recall": 0.7064
+        },
+        "transverse_crack": {
+          "ap50": 0.6488,
+          "ap50_95": 0.3065,
+          "precision": 0.6735,
+          "recall": 0.5696
+        },
+        "alligator_crack": {
+          "ap50": 0.6988,
+          "ap50_95": 0.4192,
+          "precision": 0.7522,
+          "recall": 0.546
+        }
+      },
+      "images": 704
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "splits": {
+    "train": {
+      "images": 26869,
+      "images_with_damage": 17902,
+      "objects": {
+        "longitudinal_crack": 18201,
+        "transverse_crack": 8386,
+        "alligator_crack": 7527,
+        "pothole": 7554
+      }
+    },
+    "val": {
+      "images": 5758,
+      "images_with_damage": 3743,
+      "objects": {
+        "longitudinal_crack": 3890,
+        "transverse_crack": 1769,
+        "alligator_crack": 1553,
+        "pothole": 1564
+      }
+    },
+    "test": {
+      "images": 5758,
+      "images_with_damage": 3785,
+      "objects": {
+        "longitudinal_crack": 3925,
+        "transverse_crack": 1675,
+        "alligator_crack": 1537,
+        "pothole": 1587
+      }
+    }
+  },
+  "per_country": {
+    "China_Drone": {
+      "train": 1675,
+      "val": 349,
+      "test": 377
+    },
+    "China_MotorBike": {
+      "train": 1376,
+      "val": 296,
+      "test": 305
+    },
+    "Czech": {
+      "train": 1962,
+      "val": 431,
+      "test": 436
+    },
+    "India": {
+      "train": 5368,
+      "val": 1172,
+      "test": 1166
+    },
+    "Japan": {
+      "train": 7432,
+      "val": 1550,
+      "test": 1524
+    },
+    "Norway": {
+      "train": 5708,
+      "val": 1256,
+      "test": 1197
+    },
+    "United_States": {
+      "train": 3348,
+      "val": 704,
+      "test": 753
+    }
+  }
+}
